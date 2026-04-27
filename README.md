@@ -1,0 +1,1 @@
+This repository houses the codebase for our ECE197-SS Project "EEEInventory: Real-time Inventory Tracking for EEEI Labs."
