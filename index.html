@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EEEInventory</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        
+        <header>
+            <h1>EEEInventory</h1>
+            <p>Real-time availability of electronic components</p>
+        </header>
+
+        <section class="summary-cards">
+            <div class="card summary-card status-high">
+                <span class="card-title">In Stock</span>
+                <h2 id="total-high">13</h2>
+            </div>
+            <div class="card summary-card status-low">
+                <span class="card-title">Low Stock</span>
+                <h2 id="total-low">4</h2>
+            </div>
+            <div class="card summary-card status-empty">
+                <span class="card-title">Out of Stock</span>
+                <h2 id="total-empty">4</h2>
+            </div>
+        </section>
+
+        <section class="legend-bar card">
+            <span class="legend-title">Status Legend:</span>
+            <div class="legend-item"><span class="dot bg-high"></span> High</div>
+            <div class="legend-item"><span class="dot bg-low"></span> Low</div>
+            <div class="legend-item"><span class="dot bg-empty"></span> Empty</div>
+        </section>
+
+        <section class="controls card">
+            <div class="control-group">
+                <label>Search Components</label>
+                <input type="text" placeholder="Search by name or value...">
+            </div>
+            <div class="control-group">
+                <label>Category</label>
+                <select>
+                    <option>All Categories</option>
+                    <option>Resistors</option>
+                    <option>Capacitors</option>
+                </select>
+            </div>
+            <div class="control-group">
+                <label>Status</label>
+                <div class="button-group">
+                    <button class="btn active">All</button>
+                    <button class="btn">High</button>
+                    <button class="btn">Low</button>
+                    <button class="btn">Empty</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="component-section">
+            <h3>Resistors</h3>
+            <div class="component-grid">
+                
+                <div class="card component-card status-high" id="card-res-220">
+                    <div class="card-header">
+                        <span class="comp-type">Resistor</span>
+                        <span class="dot bg-high" id="dot-res-220"></span>
+                    </div>
+                    <div class="comp-value">220Ω</div>
+                    <div class="comp-status-label" id="label-res-220">High</div>
+                </div>
+
+                <div class="card component-card status-low" id="card-res-1k">
+                    <div class="card-header">
+                        <span class="comp-type">Resistor</span>
+                        <span class="dot bg-low" id="dot-res-1k"></span>
+                    </div>
+                    <div class="comp-value">1kΩ</div>
+                    <div class="comp-status-label" id="label-res-1k">Low</div>
+                </div>
+
+                <div class="card component-card status-empty" id="card-res-3k3">
+                    <div class="card-header">
+                        <span class="comp-type">Resistor</span>
+                        <span class="dot bg-empty" id="dot-res-3k3"></span>
+                    </div>
+                    <div class="comp-value">3.3kΩ</div>
+                    <div class="comp-status-label" id="label-res-3k3">Empty</div>
+                </div>
+
+                <div class="card component-card status-high" id="card-res-10k">
+                    <div class="card-header">
+                        <span class="comp-type">Resistor</span>
+                        <span class="dot bg-high" id="dot-res-10k"></span>
+                    </div>
+                    <div class="comp-value">10kΩ</div>
+                    <div class="comp-status-label" id="label-res-10k">High</div>
+                </div>
+
+            </div>
+        </section>
+
+    </div>
+</body>
+</html>
