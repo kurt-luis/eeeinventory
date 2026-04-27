@@ -39,19 +39,18 @@
         <section class="controls card">
             <div class="control-group">
                 <label>Search Components</label>
-                <input type="text" placeholder="Search by name or value...">
+                <input type="text" id="searchInput" placeholder="Search by name or value...">
             </div>
             <div class="control-group">
                 <label>Category</label>
-                <select>
+                <select id="categorySelect">
                     <option>All Categories</option>
-                    <option>Resistors</option>
-                    <option>Capacitors</option>
+                    <option>Resistor</option> <option>Capacitor</option>
                 </select>
             </div>
             <div class="control-group">
                 <label>Status</label>
-                <div class="button-group">
+                <div class="button-group" id="statusButtons">
                     <button class="btn active">All</button>
                     <button class="btn">High</button>
                     <button class="btn">Low</button>
@@ -104,5 +103,7 @@
         </section>
 
     </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
